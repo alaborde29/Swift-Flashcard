@@ -6,3 +6,16 @@
 //
 
 import Foundation
+
+class FlashcardItemBack: Codable {
+    let rightAnswer: String
+    let description: String
+}
+
+class FlashcardItem: Codable {
+    let hasBack: Bool
+    let answer: [String]
+    let description: String
+    let image: String
+    let backData: FlashcardItemBack
+}

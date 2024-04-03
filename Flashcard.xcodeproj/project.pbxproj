@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		FA3B39CD2BB93C95007F4B77 /* FlashcardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3B39CC2BB93C95007F4B77 /* FlashcardApp.swift */; };
-		FA3B39CF2BB93C95007F4B77 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3B39CE2BB93C95007F4B77 /* ContentView.swift */; };
 		FA3B39D12BB93C96007F4B77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA3B39D02BB93C96007F4B77 /* Assets.xcassets */; };
 		FA3B39D42BB93C96007F4B77 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA3B39D32BB93C96007F4B77 /* Preview Assets.xcassets */; };
 		FA3B39DE2BB93C96007F4B77 /* FlashcardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3B39DD2BB93C96007F4B77 /* FlashcardTests.swift */; };
@@ -24,6 +23,17 @@
 		FA447CE92BB94357007A8C93 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = FA447CE82BB94357007A8C93 /* FirebaseFirestore */; };
 		FA447CEB2BB94357007A8C93 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FA447CEA2BB94357007A8C93 /* FirebaseFirestoreSwift */; };
 		FA447CED2BB9440E007A8C93 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = FA447CEC2BB9440E007A8C93 /* .gitignore */; };
+		FA447CEF2BBA5CAC007A8C93 /* MainViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA447CEE2BBA5CAB007A8C93 /* MainViewViewModel.swift */; };
+		FA447CF12BBA5CB6007A8C93 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA447CF02BBA5CB6007A8C93 /* MainView.swift */; };
+		FA447CF32BBA60EF007A8C93 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA447CF22BBA60EF007A8C93 /* CardView.swift */; };
+		FA447CF52BBAB91F007A8C93 /* CardViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA447CF42BBAB91F007A8C93 /* CardViewViewModel.swift */; };
+		FA447CF72BBAB935007A8C93 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA447CF62BBAB935007A8C93 /* Extensions.swift */; };
+		FA447CFF2BBBA82B007A8C93 /* NewDeckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA447CFE2BBBA82B007A8C93 /* NewDeckView.swift */; };
+		FA447D012BBBA83B007A8C93 /* NewDeckViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA447D002BBBA83B007A8C93 /* NewDeckViewModel.swift */; };
+		FA447D042BBBA9A4007A8C93 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA447D032BBBA9A4007A8C93 /* Deck.swift */; };
+		FA447D062BBBD28E007A8C93 /* DeckCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA447D052BBBD28E007A8C93 /* DeckCollectionView.swift */; };
+		FA447D082BBC0A50007A8C93 /* DeckCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA447D072BBC0A50007A8C93 /* DeckCollectionViewModel.swift */; };
+		FA447D0C2BBD0F82007A8C93 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA447D0B2BBD0F82007A8C93 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +56,6 @@
 /* Begin PBXFileReference section */
 		FA3B39C92BB93C95007F4B77 /* Flashcard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flashcard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA3B39CC2BB93C95007F4B77 /* FlashcardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardApp.swift; sourceTree = "<group>"; };
-		FA3B39CE2BB93C95007F4B77 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FA3B39D02BB93C96007F4B77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA3B39D32BB93C96007F4B77 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FA3B39D92BB93C96007F4B77 /* FlashcardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlashcardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,6 +68,17 @@
 		FA447CDD2BB94233007A8C93 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FA447CDF2BB94250007A8C93 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		FA447CEC2BB9440E007A8C93 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		FA447CEE2BBA5CAB007A8C93 /* MainViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewViewModel.swift; sourceTree = "<group>"; };
+		FA447CF02BBA5CB6007A8C93 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		FA447CF22BBA60EF007A8C93 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		FA447CF42BBAB91F007A8C93 /* CardViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewViewModel.swift; sourceTree = "<group>"; };
+		FA447CF62BBAB935007A8C93 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		FA447CFE2BBBA82B007A8C93 /* NewDeckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDeckView.swift; sourceTree = "<group>"; };
+		FA447D002BBBA83B007A8C93 /* NewDeckViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDeckViewModel.swift; sourceTree = "<group>"; };
+		FA447D032BBBA9A4007A8C93 /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
+		FA447D052BBBD28E007A8C93 /* DeckCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckCollectionView.swift; sourceTree = "<group>"; };
+		FA447D072BBC0A50007A8C93 /* DeckCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckCollectionViewModel.swift; sourceTree = "<group>"; };
+		FA447D0B2BBD0F82007A8C93 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,7 +172,11 @@
 		FA447CD52BB93EDF007A8C93 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FA3B39CE2BB93C95007F4B77 /* ContentView.swift */,
+				FA447CF02BBA5CB6007A8C93 /* MainView.swift */,
+				FA447CF22BBA60EF007A8C93 /* CardView.swift */,
+				FA447CFE2BBBA82B007A8C93 /* NewDeckView.swift */,
+				FA447D052BBBD28E007A8C93 /* DeckCollectionView.swift */,
+				FA447D0B2BBD0F82007A8C93 /* ProfileView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -162,6 +186,7 @@
 			children = (
 				FA447CD92BB940B4007A8C93 /* User.swift */,
 				FA447CDB2BB940D2007A8C93 /* FlashcardItem.swift */,
+				FA447D032BBBA9A4007A8C93 /* Deck.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -169,6 +194,10 @@
 		FA447CD72BB93F01007A8C93 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				FA447CEE2BBA5CAB007A8C93 /* MainViewViewModel.swift */,
+				FA447CF42BBAB91F007A8C93 /* CardViewViewModel.swift */,
+				FA447D002BBBA83B007A8C93 /* NewDeckViewModel.swift */,
+				FA447D072BBC0A50007A8C93 /* DeckCollectionViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -180,6 +209,7 @@
 				FA447CDD2BB94233007A8C93 /* GoogleService-Info.plist */,
 				FA3B39D02BB93C96007F4B77 /* Assets.xcassets */,
 				FA447CDF2BB94250007A8C93 /* Launch Screen.storyboard */,
+				FA447CF62BBAB935007A8C93 /* Extensions.swift */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -327,10 +357,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA3B39CF2BB93C95007F4B77 /* ContentView.swift in Sources */,
+				FA447D042BBBA9A4007A8C93 /* Deck.swift in Sources */,
+				FA447CF12BBA5CB6007A8C93 /* MainView.swift in Sources */,
 				FA447CDC2BB940D2007A8C93 /* FlashcardItem.swift in Sources */,
 				FA3B39CD2BB93C95007F4B77 /* FlashcardApp.swift in Sources */,
+				FA447CF72BBAB935007A8C93 /* Extensions.swift in Sources */,
+				FA447D062BBBD28E007A8C93 /* DeckCollectionView.swift in Sources */,
+				FA447CEF2BBA5CAC007A8C93 /* MainViewViewModel.swift in Sources */,
+				FA447D0C2BBD0F82007A8C93 /* ProfileView.swift in Sources */,
+				FA447CF32BBA60EF007A8C93 /* CardView.swift in Sources */,
+				FA447CF52BBAB91F007A8C93 /* CardViewViewModel.swift in Sources */,
 				FA447CDA2BB940B4007A8C93 /* User.swift in Sources */,
+				FA447D082BBC0A50007A8C93 /* DeckCollectionViewModel.swift in Sources */,
+				FA447CFF2BBBA82B007A8C93 /* NewDeckView.swift in Sources */,
+				FA447D012BBBA83B007A8C93 /* NewDeckViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,9 +537,11 @@
 				DEVELOPMENT_TEAM = 5Z562W724H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Flashcard;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -526,9 +568,11 @@
 				DEVELOPMENT_TEAM = 5Z562W724H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Flashcard;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
