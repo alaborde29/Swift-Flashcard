@@ -34,6 +34,9 @@
 		FA447D062BBBD28E007A8C93 /* DeckCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA447D052BBBD28E007A8C93 /* DeckCollectionView.swift */; };
 		FA447D082BBC0A50007A8C93 /* DeckCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA447D072BBC0A50007A8C93 /* DeckCollectionViewModel.swift */; };
 		FA447D0C2BBD0F82007A8C93 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA447D0B2BBD0F82007A8C93 /* ProfileView.swift */; };
+		FA447D0E2BBD2C30007A8C93 /* DeckPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA447D0D2BBD2C30007A8C93 /* DeckPreviewView.swift */; };
+		FA447D102BBD414D007A8C93 /* DeckInfosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA447D0F2BBD414D007A8C93 /* DeckInfosView.swift */; };
+		FA447D122BBD7696007A8C93 /* DeckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA447D112BBD7696007A8C93 /* DeckView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +82,9 @@
 		FA447D052BBBD28E007A8C93 /* DeckCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckCollectionView.swift; sourceTree = "<group>"; };
 		FA447D072BBC0A50007A8C93 /* DeckCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckCollectionViewModel.swift; sourceTree = "<group>"; };
 		FA447D0B2BBD0F82007A8C93 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		FA447D0D2BBD2C30007A8C93 /* DeckPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckPreviewView.swift; sourceTree = "<group>"; };
+		FA447D0F2BBD414D007A8C93 /* DeckInfosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckInfosView.swift; sourceTree = "<group>"; };
+		FA447D112BBD7696007A8C93 /* DeckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +183,9 @@
 				FA447CFE2BBBA82B007A8C93 /* NewDeckView.swift */,
 				FA447D052BBBD28E007A8C93 /* DeckCollectionView.swift */,
 				FA447D0B2BBD0F82007A8C93 /* ProfileView.swift */,
+				FA447D0D2BBD2C30007A8C93 /* DeckPreviewView.swift */,
+				FA447D0F2BBD414D007A8C93 /* DeckInfosView.swift */,
+				FA447D112BBD7696007A8C93 /* DeckView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -361,6 +370,7 @@
 				FA447CF12BBA5CB6007A8C93 /* MainView.swift in Sources */,
 				FA447CDC2BB940D2007A8C93 /* FlashcardItem.swift in Sources */,
 				FA3B39CD2BB93C95007F4B77 /* FlashcardApp.swift in Sources */,
+				FA447D0E2BBD2C30007A8C93 /* DeckPreviewView.swift in Sources */,
 				FA447CF72BBAB935007A8C93 /* Extensions.swift in Sources */,
 				FA447D062BBBD28E007A8C93 /* DeckCollectionView.swift in Sources */,
 				FA447CEF2BBA5CAC007A8C93 /* MainViewViewModel.swift in Sources */,
@@ -371,6 +381,8 @@
 				FA447D082BBC0A50007A8C93 /* DeckCollectionViewModel.swift in Sources */,
 				FA447CFF2BBBA82B007A8C93 /* NewDeckView.swift in Sources */,
 				FA447D012BBBA83B007A8C93 /* NewDeckViewModel.swift in Sources */,
+				FA447D122BBD7696007A8C93 /* DeckView.swift in Sources */,
+				FA447D102BBD414D007A8C93 /* DeckInfosView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

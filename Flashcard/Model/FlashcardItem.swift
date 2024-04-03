@@ -13,6 +13,7 @@ class FlashcardItemBack: Codable {
 }
 
 class FlashcardItem: Codable {
+    let id: String
     let hasBack: Bool
     let answer: [String]
     let description: String

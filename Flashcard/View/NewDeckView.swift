@@ -14,7 +14,7 @@ struct NewDeckView: View {
             Text("New deck")
                 .font(.system(size: 32))
                 .bold()
-            //                .padding(.top, 100)
+                .padding(.top)
             Form {
                 TextField("Deck name", text: $viewModel.deckName)
                     .autocorrectionDisabled()
