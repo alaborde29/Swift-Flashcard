@@ -7,9 +7,9 @@
 
 import Foundation
 
-class User: Codable {
+struct User: Codable {
     let id: String
     let fullName: String
-    let mail: String
-    let joined: Date
+    let email: String
+    let joined: TimeInterval
 }

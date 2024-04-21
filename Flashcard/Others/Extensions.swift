@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 extension Encodable {
     func asDictionary() -> [String: Any] {
@@ -19,5 +20,16 @@ extension Encodable {
         } catch {
             return [:]
         }
+    }
+}
+
+extension Color {
+    func toHex() -> Color {
+        let components = self.cgColor?.components
+        let r = components?[0] ?? 0
+        let g = components?[1] ?? 0
+        let b = components?[2] ?? 0
+        
+        return Color(red: Double(r), green: Double(g), blue: Double(b))
     }
 }

@@ -7,16 +7,18 @@
 
 import Foundation
 
-class FlashcardItemBack: Codable {
+struct FlashcardItemBack: Codable, Identifiable {
+    let id: String
     let rightAnswer: String
     let description: String
+    let propositions: [String]
 }
 
-class FlashcardItem: Codable {
+struct FlashcardItem: Codable, Identifiable {
     let id: String
     let hasBack: Bool
-    let answer: [String]
     let description: String
     let image: String
+    let color: String
     let backData: FlashcardItemBack
 }

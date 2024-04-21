@@ -7,12 +7,12 @@
 
 import Foundation
 
-class Deck: Codable, Hashable {
+struct Deck: Codable, Hashable {
     let id: String
     let size: Int8
     let name: String
     let description: String
-    let cards: [FlashcardItem]
+    var cards: [FlashcardItem]
     let creationDate: TimeInterval
     let lastModification: TimeInterval
     let category: String

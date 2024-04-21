@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct DeckPreviewView: View {
-    var deck: Deck
+    @Binding var deck: Deck
+    @Binding var selectedDeck: Deck?
+    
     var body: some View {
         ZStack {
-            NavigationLink(destination: DeckView(currentDeck: deck), label: {
+            NavigationLink(destination: DeckView(currentDeck: $deck), label: {
                 ZStack {
                     RoundedRectangle(cornerRadius: 25.0)
                         .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
@@ -21,6 +23,11 @@ struct DeckPreviewView: View {
                             .bold()
                             .font(.system(size: 25))
                             .foregroundColor(.black)
+                        Text("size: " + String(deck.size))
+                            .bold()
+                            .font(.system(size: 20))
+                            .foregroundColor(.black)
+                            .offset(CGSize(width: 0.0, height: 10.0))
                     }
                 }
             })
@@ -28,8 +35,8 @@ struct DeckPreviewView: View {
                 HStack {
                     Spacer()
                     Menu(content: {
-                        Button("Edit") { DeckPreviewView(deck: deck) }
-                        NavigationLink("Edit2", destination: DeckView(currentDeck: deck))
+                        Button("Edit") { selectedDeck = deck }
+                        NavigationLink("Edit2", destination: DeckView(currentDeck: $deck))
                         Button("Duplicate") {}
                         Button("Delete", role: .destructive) {}
                     },
@@ -48,5 +55,5 @@ struct DeckPreviewView: View {
 }
 
 #Preview {
-    DeckPreviewView(deck: Deck(id: "e", size: 0, name: "String", description: "Voici une description courte du deck", cards: []))
+    DeckPreviewView(deck: .constant(Deck(id: "e", size: 0, name: "String", description: "Voici une description courte du deck", cards: [])), selectedDeck: .constant(nil))
 }
